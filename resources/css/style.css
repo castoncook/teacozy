@@ -1,0 +1,123 @@
+body {
+margin: 0;
+padding: 0;
+background-color:black;
+opacity:0.9;
+}
+* {
+  font-family: helvetica;
+  color: seashell;
+  font-size:22px;
+}
+
+/* Header styling */
+header {
+ display: flex;
+ flex-direction: row;
+ justify-content:space-between;
+ align-items:center;
+ height: 69px;
+ width:100%;
+ background-color:black;
+ border-bottom: 1px solid seashell;
+ position: fixed;
+ overflow: scroll;
+}
+.logo img {
+  max-height: 50px;
+  max-width: 158px;
+  padding-left: 10px;
+}
+header span {
+  text-decoration:underline;
+  padding-right: 20px;
+}
+/* Main Content styling */
+.content {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text {
+  width: 100%;
+  text-align:center;
+}
+/* Anchor styling to compensate for fixed header */
+.anchor {
+  display:block;
+  height: 70px;
+  margin-top:-70px;
+  visibility: hidden;
+}
+/* Mission Container styling */
+.mission {
+  height: 700px;
+  width: 1200px;
+  background-image: url(../img/mission-background.jpg);
+  margin-top:69px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mission .text {
+    background-color: black;
+}
+/* Tea of the month container styling */
+.tea {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+.tiles {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  justify-content:center;
+}
+.image-tile {
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+}
+.image-tile span {
+  padding: 10px;
+}
+img {
+  height: 200px;
+  width: 300px;
+  padding: 10px;
+}
+/* Locations container styling */
+.location-container {
+  height: 500px;
+  width: 1200px;
+  background-image:  url(../img/locations-background.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+.location-tile {
+  background-color: black;
+  width: 300px;
+  margin: 15px 20px;
+  text-align:center;
+  opacity: 1;
+}
+.text .location-container {
+  margin: 0 auto;
+}
+/* Footer styling */
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.text footer {
+  height: 200px;
+}
+footer span {
+  text-align: left;
+  padding: 20px
+}
